@@ -1,0 +1,497 @@
+{
+  "title": "14 Encontro com a Educação Mealhada",
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "O Elefante na Sala A Revolução da IA na Educação e os Desafios que Não Podemos Ignorar",
+      "slides": [
+        {
+          "id": 1,
+          "title": "O Elefante na Sala A Revolução da IA na Educação e os Desafios que Não Podemos Ignorar",
+          "content": [
+            {
+              "type": "text",
+              "value": "14.º Encontro com a Educação Mealhada Abril 2025 Miguel Oliveira"
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 2,
+          "title": "",
+          "content": [
+            {
+              "type": "text",
+              "value": "A Inteligência Artificial não nos vai substituir"
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 3,
+          "title": "quem nos vai substituir são pessoas que utilizam A Inteligência Artificial para aumentar as suas competências",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 4,
+          "title": "",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 5,
+          "title": "Ritmo cada vez mais acelerado da mudança",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 6,
+          "title": "",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 7,
+          "title": "Resistência à mudança e A Mudança como (única) constante",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 8,
+          "title": "",
+          "content": [
+            {
+              "type": "text",
+              "value": "Sat, Nov 02, 1861"
+            },
+            {
+              "type": "text",
+              "value": "Sun, Dec 02, 1923"
+            },
+            {
+              "type": "text",
+              "value": "Wed, Apr 27, 1932"
+            },
+            {
+              "type": "text",
+              "value": "Tue, Oct 24, 1950"
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_8_image_1.png",
+            "/images/slides/slide_8_image_2.png",
+            "/images/slides/slide_8_image_3.png"
+          ]
+        },
+        {
+          "id": 9,
+          "title": "",
+          "content": [
+            {
+              "type": "text",
+              "value": "Sat, Dec 10, 1892"
+            },
+            {
+              "type": "text",
+              "value": "Thu, Oct 16, 1952"
+            },
+            {
+              "type": "text",
+              "value": "Sun, Sep 08, 1912"
+            },
+            {
+              "type": "text",
+              "value": "Wed, Mar 31, 1920"
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_9_image_1.png",
+            "/images/slides/slide_9_image_2.png",
+            "/images/slides/slide_9_image_3.png",
+            "/images/slides/slide_9_image_4.png"
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Ursos de Peluche Proibidos pelas Professoras Thu, Aug 22, 1907",
+          "content": [
+            {
+              "type": "text",
+              "value": "Contexto: Havia mais de cem mil ursinhos de peluche na cidade, mas agora os professores estão a declará-los um \"perigo educativo\". Motivo da crítica: Segundo professores e até líderes religiosos, o urso de peluche é um substituto “pernicioso” para a boneca tradicional, que promovia o desenvolvimento saudável e natural das meninas — como instinto maternal, cuidado, costura, etc. Argumento central: O urso de peluche não incentiva as meninas a aprender a costurar, a vestir bonecas ou a desenvolver habilidades domésticas, já que não usa roupas bonitas, nem precisa de cuidados como uma boneca. Frase emblemática: “O urso de peluche não é bom para meninas” – segundo a professora Jane G. Close. Diferença de género: Diz-se que o urso até pode ser aceitável para meninos, mas não para meninas, pois impede a educação envolvida em “roupinhas delicadas” e atividades femininas tradicionais. Crítica à sociedade moderna: Os professores lamentam ainda que a cultura moderna esteja a incentivar o descarte de roupas antigas e o afastamento das atividades manuais e de cuidado."
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 11,
+          "title": "Estado da arte",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 12,
+          "title": "História da Inteligência artificial",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 13,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_13_image_1.png"
+          ]
+        },
+        {
+          "id": 14,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_14_image_1.png"
+          ]
+        },
+        {
+          "id": 15,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_15_image_1.png"
+          ]
+        },
+        {
+          "id": 16,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_16_image_1.png"
+          ]
+        },
+        {
+          "id": 17,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_17_image_1.png"
+          ]
+        },
+        {
+          "id": 18,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_18_image_1.png"
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Como pode ser utilizada a IA no contexto escolar",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 20,
+          "title": "",
+          "content": [
+            {
+              "type": "text",
+              "value": "Inserir texto"
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_20_image_1.png",
+            "/images/slides/slide_20_image_2.png"
+          ]
+        },
+        {
+          "id": 21,
+          "title": "",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 22,
+          "title": "O PROBLEMA DAS 2 SIGMAS",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 23,
+          "title": "O Desafio de Bloom: Alcançar os Benefícios da Tutoria Individual em Grupo",
+          "content": [
+            {
+              "type": "text",
+              "value": "📊 O que Bloom descobriu: Estudantes com tutoria individual tiveram desempenho 2 desvios padrão (sigmas) acima dos que aprenderam em grupo. Isto representa uma melhoria média de 98% no rendimento. 🔍 Mas o desafio era: Como tornar este nível de aprendizagem acessível a todos… …sem precisar de um tutor por aluno? 👨‍🏫 Tutoria personalizada era eficaz… mas impraticável em larga escala."
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 24,
+          "title": "Será a IA o caminho para superar as 2 sigmas?",
+          "content": [
+            {
+              "type": "text",
+              "value": "🤖 LLMs como tutores digitais Proporcionam feedback individualizado Respondem 24/7 Adaptam-se ao ritmo de cada aluno Podem escalar sem perder personalização 💡 Nova hipótese: Se bem usados, os LLMs podem reproduzir os ganhos da tutoria individual, mas ao alcance de todos. 🔁 A IA permite testar hoje o que Bloom só pôde imaginar em 1984"
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 25,
+          "title": "“A IA pode ser tudo o que quiseres, depende do prompt.” – Uyi, 14 anos, Nigéria",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 26,
+          "title": "A VOZ DE UYI: APRENDER COM IA NA NIGÉRIA",
+          "content": [
+            {
+              "type": "text",
+              "value": "🟢 Contexto real: Programa extracurricular com IA generativa em Edo, Nigéria. Alunos aprenderam com chatbots após o horário escolar. 🧠 Objetivo: Melhorar o desempenho em Inglês, Conhecimento sobre IA e Competências Digitais. 📌 Apoio docente + IA = Tutor virtual eficaz 👥 Foco na equidade: Benefícios em todos os alunos, especialmente raparigas. Os que estavam mais atrás foram os que mais progrediram."
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 27,
+          "title": "RESULTADOS: 6 SEMANAS = 2 ANOS DE APRENDIZAGEM",
+          "content": [
+            {
+              "type": "text",
+              "value": "📈 Impacto educativo medido: Aumento de 0,3 desvios-padrão nas aprendizagens. Superou 80% das estratégias educativas testadas em países em desenvolvimento. 📚 Transferência além do programa: Alunos tiveram melhores notas nos exames finais do ano. Usaram o que aprenderam com IA para estudar outras matérias por iniciativa própria. 👣 Mais sessões = mais progresso Cada dia extra no programa resultou em ganhos reais. Sugerem que programas mais longos podem ter impacto ainda maior."
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 28,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_28_image_1.png"
+          ]
+        },
+        {
+          "id": 29,
+          "title": "",
+          "content": [
+            {
+              "type": "text",
+              "value": "Impacto potencial, tarefas de professor"
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 30,
+          "title": "LLM’s como ferramentas de indução de pensamento crítico",
+          "content": [
+            {
+              "type": "text",
+              "value": "LLM’s: Não Apenas Assistentes, Mas Provocadores desafiar suposições e proporcionar contra-argumentos. design de interações com a IA que incite a reflexão crítica."
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_30_image_1.png"
+          ]
+        },
+        {
+          "id": 31,
+          "title": "Evolução do Conhecimento Digital: De Documentos para Diálogos",
+          "content": [
+            {
+              "type": "text",
+              "value": "Transição paradigmática do conteúdo digital de documentos para conversas. Historicamente, o conteúdo digital existia sob a forma de documentos, mas agora é cada vez mais captado em conversas, seja através de mediação digital entre pessoas ou entre pessoas e (LLMs). O conhecimento integrado nestas conversas pode ser aproveitado pelos LLMs. Factos de conversas anteriores podem ser trazidos à tona de forma contextualizada quando apropriado. Conversas anteriores também podem ser utilizadas para personalização. Conversas bem-sucedidas podem fornecer padrões para engenharia de prompts."
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 32,
+          "title": "As evidências apontam para os LLM’s ajudarem mais os menos experientes",
+          "content": [
+            {
+              "type": "text",
+              "value": "Estudos iniciais têm mostrado que trabalhadores novos ou de menor qualificação beneficiam mais dos LLMs. Podemos exportar estas evidências para o contexto educativo? Brynjolfsson et al. (2023) encontraram evidências sugerindo que os LLM’s facilitavam a disseminação de conhecimento tácito que os trabalhadores de alta qualificação já possuíam."
+            }
+          ],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 33,
+          "title": "",
+          "content": [
+            {
+              "type": "text",
+              "value": "Aurélio"
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_33_image_1.png",
+            "/images/slides/slide_33_image_2.png"
+          ]
+        },
+        {
+          "id": 34,
+          "title": "Os LLM’s como co-piloto",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_34_image_1.png"
+          ]
+        },
+        {
+          "id": 35,
+          "title": "“65% das crianças de hoje vão exercer profissões que ainda não foram inventadas”",
+          "content": [
+            {
+              "type": "text",
+              "value": "(OCDE 2016)"
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_35_image_1.png"
+          ]
+        },
+        {
+          "id": 36,
+          "title": "Como se está a adaptar a IA a esta forma de produção de conhecimento?",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_36_image_1.png"
+          ]
+        },
+        {
+          "id": 37,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_37_image_1.png"
+          ]
+        },
+        {
+          "id": 38,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_38_image_1.png"
+          ]
+        },
+        {
+          "id": 39,
+          "title": "Nos nossos dias, o acesso ao conhecimento já não é fator determinante.",
+          "content": [
+            {
+              "type": "text",
+              "value": "A questão que se coloca é a de saber onde está o conhecimento, se provem de fontes fidedignas e a forma como articulamos estas duas dimensões"
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_39_image_1.png"
+          ]
+        },
+        {
+          "id": 40,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_40_image_1.png",
+            "/images/slides/slide_40_image_2.png"
+          ]
+        },
+        {
+          "id": 41,
+          "title": "Remodelação de recursos existentes",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_41_image_1.png"
+          ]
+        },
+        {
+          "id": 42,
+          "title": "Remodelação de recursos existentes",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_42_image_1.png"
+          ]
+        },
+        {
+          "id": 43,
+          "title": "irá a IA a Canibalizar o resto da ciência?",
+          "content": [],
+          "hasImage": false,
+          "images": []
+        },
+        {
+          "id": 44,
+          "title": "",
+          "content": [],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_44_image_1.png"
+          ]
+        },
+        {
+          "id": 45,
+          "title": "",
+          "content": [
+            {
+              "type": "text",
+              "value": "Obrigado! miguelalvaro13@gmail.com"
+            }
+          ],
+          "hasImage": true,
+          "images": [
+            "/images/slides/slide_45_image_1.png",
+            "/images/slides/slide_45_image_2.png"
+          ]
+        }
+      ],
+      "description": "14.º Encontro com a Educação Mealhada Abril 2025 Miguel Oliveira"
+    }
+  ],
+  "totalSlides": 45
+}
