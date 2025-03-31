@@ -1,0 +1,214 @@
+/* TutorPro-inspired CSS styles */
+
+.tutorpro-container {
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #60a5fa;
+  --secondary-color: #10b981;
+  --text-dark: #171717;
+  --text-light: #f9fafb;
+  --text-gray: #6b7280;
+  --bg-dark: #0f172a;
+  --bg-light: #ffffff;
+  --bg-gray: #f3f4f6;
+  --bg-gradient-1: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  --bg-gradient-2: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --card-radius: 12px;
+  --nav-height: 80px;
+  --section-spacing: 100px;
+  
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text-dark);
+}
+
+/* TutorPro Navbar */
+.tutorpro-navbar {
+  background-color: var(--bg-dark);
+  height: var(--nav-height);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tutorpro-navbar a {
+  color: var(--text-light);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tutorpro-navbar a:hover {
+  color: var(--primary-light);
+}
+
+.tutorpro-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+/* TutorPro Hero Section */
+.tutorpro-hero {
+  background: var(--bg-gradient-1);
+  min-height: calc(100vh - var(--nav-height));
+  padding: 80px 0;
+}
+
+.tutorpro-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-light);
+  line-height: 1.2;
+}
+
+.tutorpro-hero p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* TutorPro Buttons */
+.tutorpro-button-primary {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.tutorpro-button-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.tutorpro-button-secondary {
+  background-color: var(--text-light);
+  color: var(--primary-color);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.tutorpro-button-secondary:hover {
+  background-color: var(--bg-gray);
+}
+
+/* TutorPro Cards */
+.tutorpro-card {
+  background-color: var(--bg-light);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorpro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* TutorPro Features Section */
+.tutorpro-features {
+  padding: var(--section-spacing) 0;
+}
+
+.tutorpro-features h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.tutorpro-feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* TutorPro Section Titles */
+.tutorpro-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.tutorpro-section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-gray);
+  margin-bottom: 3rem;
+}
+
+/* TutorPro CTA Section */
+.tutorpro-cta {
+  background: var(--bg-gradient-2);
+  padding: 80px 0;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.tutorpro-cta h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.tutorpro-cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* TutorPro Footer */
+.tutorpro-footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 60px 0 30px;
+}
+
+.tutorpro-footer-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.tutorpro-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.tutorpro-footer a:hover {
+  color: var(--text-light);
+}
+
+/* PDF Viewer Specific Styles */
+.tutorpro-pdf-viewer {
+  background-color: var(--bg-gray);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  height: calc(100vh - var(--nav-height));
+}
+
+.tutorpro-pdf-controls {
+  background-color: var(--bg-dark);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tutorpro-pdf-controls button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.tutorpro-pdf-controls button:hover {
+  background-color: var(--primary-dark);
+}

@@ -12,7 +12,7 @@ const PDFViewer = dynamic(() => import("../components/PDFViewer"), {
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="text-center">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600 mx-auto mb-4"></div>
-        <p className="text-blue-600 font-medium">Loading viewer...</p>
+        <p className="text-blue-600 font-medium">Carregando apresentação...</p>
       </div>
     </div>
   )
@@ -42,47 +42,26 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white border-b border-gray-200 shadow-sm">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-blue-600 hover:text-blue-800 transition-colors">
-            14º Encontro com a Educação
+      {/* TutorPro-inspired Header */}
+      <header className="tutorpro-navbar sticky top-0 z-50">
+        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+          <Link href="/" className="tutorpro-logo text-base md:text-lg font-semibold whitespace-nowrap">
+            14.º Encontro com a Educação “Inteligência Artificial: a nova era da Educação”
           </Link>
           <nav>
-            <ul className="flex space-x-6">
+            <ul className="flex space-x-8">
               <li>
                 <a 
                   href="#about" 
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                   onClick={(e) => {
                     e.preventDefault();
                     setActivePDFView(false);
                     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  About
+                  Sobre
                 </a>
-              </li>
-              <li>
-                <a 
-                  href="#features" 
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActivePDFView(false);
-                    document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-                <button 
-                  onClick={() => setActivePDFView(true)}
-                  className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition-colors"
-                >
-                  View Presentation
-                </button>
               </li>
             </ul>
           </nav>
@@ -91,143 +70,115 @@ export default function Home() {
 
       {activePDFView ? (
         /* PDF Viewer when active */
-        <div className="w-full relative">
+        <div className="w-full relative tutorpro-pdf-viewer">
           <PDFViewer pdfPath={pdfPath} />
           <button 
             onClick={() => setActivePDFView(false)}
-            className="absolute top-4 right-4 z-10 bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-50 transition-colors"
+            className="absolute top-4 right-4 z-10 tutorpro-button-secondary"
           >
-            Back to Home
+            Voltar
           </button>
         </div>
       ) : (
         /* Landing page styled like TutorPro template */
-        <main className="container mx-auto px-4 py-12">
+        <>
           {/* Hero Section */}
-          <section className="flex flex-col md:flex-row gap-8 items-center mb-16">
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold mb-4 text-gray-800">14º Encontro com a Educação Mealhada</h1>
-              <p className="text-xl text-gray-600 mb-6">Abril 2025</p>
-              <p className="text-gray-600 mb-8">Explore our comprehensive presentation on educational innovations and strategies for the digital age.</p>
-              <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={() => setActivePDFView(true)}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors"
-                >
-                  View Presentation
-                </button>
-                <a 
-                  href={pdfPath} 
-                  download="14-Encontro-com-a-Educação-Mealhada-Abril-2025.pdf"
-                  className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md transition-colors"
-                >
-                  Download PDF
-                </a>
-                <Link 
-                  href="/direct-link"
-                  className="bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 px-6 py-3 rounded-md transition-colors"
-                >
-                  Direct PDF Access
-                </Link>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="w-full max-w-md bg-gray-100 p-4 rounded-lg shadow-md">
-                <div className="border border-gray-300 rounded h-64 flex items-center justify-center bg-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
+          <section className="tutorpro-hero">
+            <div className="container mx-auto px-6 py-20">
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="md:w-1/2">
+                  <h1 className="tutorpro-section-title text-white text-4xl md:text-5xl font-extrabold mb-6">
+                    14.º Encontro com a Educação<br />
+                    “Inteligência Artificial: a nova era da Educação”
+                  </h1>
+                  <p className="text-xl text-white opacity-90 mb-8">Abril 2025</p>
+                  <p className="text-white opacity-80 mb-10 text-lg leading-relaxed">Explore a apresentação "O Elefante na Sala: A Revolução da IA na Educação e os Desafios que Não Podemos Ignorar - Miguel Oliveira" e o Aurélio, o assistente virtual criado para navegar esta experiência.</p>
+                  <div className="flex flex-wrap gap-4">
+                    <button 
+                      onClick={() => setActivePDFView(true)}
+                      className="tutorpro-button-secondary text-lg py-4 px-8"
+                    >
+                      Ver Apresentação
+                    </button>
+                  </div>
+                </div>
+                <div className="md:w-1/2 flex justify-center">
+                  {/* Simplified card styling for debugging */}
+                  <div className="tutorpro-card bg-white rounded-2xl p-6 shadow-xl">
+                    <div className="relative overflow-hidden rounded-lg">
+                      {/* Final attempt with simplified styling and standard img tag */}
+                      <div className="aspect-[3/4] bg-blue-100 flex items-center justify-center overflow-hidden">
+                        <img 
+                          src="/images/aurelio-image.jpg" 
+                          alt="Aurélio, o assistente virtual" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 p-4">
+                        <a 
+                          href="https://chatgpt.com/g/g-67e6d0298e2c8191945f643db07d51a4-aurelio" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="font-bold text-gray-800 hover:text-blue-600 hover:underline transition-colors"
+                        >
+                          Fale com o Aurélio
+                        </a>
+                        <p className="text-gray-600 text-sm mt-1">O Assistente Virtual</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
+
+          <main className="container mx-auto px-6">
+            {/* About Section - Redesigned */}
+            <section id="about" className="py-20 bg-white mb-16">
+              <div className="container mx-auto px-6">
+                <div className="max-w-4xl mx-auto text-center">
+                  {/* Event Logo */}
+                  <div className="mb-10 inline-block">
+                    <Image 
+                      src="/images/logo-evento.jpg" 
+                      alt="Logotipo 14º Encontro com a Educação Mealhada"
+                      width={400} 
+                      height={200} 
+                      className="rounded-lg shadow-md"
+                    />
+                  </div>
+                  <h2 className="tutorpro-section-title text-center mb-8">Sobre o Encontro</h2>
+                  <div className="text-gray-700 leading-relaxed space-y-6 text-left"> {/* Added text-left for paragraphs */}
+                    <p>
+                      O 14.º Encontro com a Educação da Mealhada, promovido pela Câmara Municipal da Mealhada, tem como tema central “Inteligência Artificial: a nova era da Educação”, refletindo sobre o impacto crescente da inteligência artificial nos processos de ensino e aprendizagem. Este evento reúne especialistas, professores e decisores educativos para debater como as novas tecnologias, em particular a IA, estão a transformar a educação, desde o pré-escolar ao ensino superior.
+                    </p>
+                    <p>
+                      A iniciativa visa proporcionar um espaço de reflexão crítica e partilha de boas práticas, incentivando uma integração ética, consciente e pedagógica das ferramentas digitais no contexto educativo. Ao longo do dia, serão apresentadas comunicações, debates e oficinas práticas que abordam desafios, oportunidades e visões para o futuro da educação na era digital.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+          </main>
           
-          {/* About Section */}
-          <section id="about" className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">About the Presentation</h2>
-            <div className="bg-white shadow-sm rounded-lg p-6">
-              <p className="text-gray-600 mb-4">
-                The 14º Encontro com a Educação Mealhada (14th Meeting with Education in Mealhada) brings together educators, researchers, and policy makers to discuss the future of education. This presentation covers key topics including:
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
-                <li>Digital transformation in education</li>
-                <li>Inclusive teaching methodologies</li>
-                <li>Assessment strategies for the 21st century</li>
-                <li>Educational policy developments</li>
-                <li>Community engagement in schools</li>
-              </ul>
-              <p className="text-gray-600">
-                Join us as we explore these important topics and share insights from leading experts in the field of education.  
-              </p>
-            </div>
-          </section>
-          
-          {/* Features Section */}
-          <section id="features" className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Presentation Highlights</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+          {/* Footer */}
+          <footer className="tutorpro-footer">
+            <div className="container mx-auto px-6 py-8">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <div className="mb-8 md:mb-0">
+                  <h2 className="tutorpro-logo text-lg font-semibold">14.º Encontro...</h2>
+                  <p className="opacity-70 max-w-md">Uma apresentação criada para fins educacionais, destacando as inovações e estratégias para o futuro da educação.</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Research-Based</h3>
-                <p className="text-gray-600">All content is supported by the latest educational research and evidence-based practices.</p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+                <div className="flex flex-col items-center md:items-end">
+                  <p className="opacity-70 mb-2"> 2025 14º Encontro com a Educação Mealhada</p>
+                  <p className="opacity-50 text-sm">Desenvolvido com Next.js e Tailwind CSS</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Practical Applications</h3>
-                <p className="text-gray-600">Learn concrete strategies and methods that can be immediately implemented in the classroom.</p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Collaborative Insights</h3>
-                <p className="text-gray-600">Perspectives from diverse stakeholders including teachers, administrators, students, and community members.</p>
               </div>
             </div>
-          </section>
-          
-          {/* CTA Section */}
-          <section className="bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg p-8 text-white text-center">
-            <h2 className="text-2xl font-bold mb-4">Ready to explore the presentation?</h2>
-            <p className="mb-6">Access the full PDF with detailed slides and comprehensive information.</p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button 
-                onClick={() => setActivePDFView(true)}
-                className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition-colors"
-              >
-                View Online
-              </button>
-              <a 
-                href={pdfPath} 
-                download="14-Encontro-com-a-Educação-Mealhada-Abril-2025.pdf"
-                className="bg-transparent border border-white text-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-md font-medium transition-colors"
-              >
-                Download PDF
-              </a>
-            </div>
-          </section>
-        </main>
+          </footer>
+        </>
       )}
-      
-      {/* Footer */}
-      <footer className="bg-gray-100 border-t border-gray-200 py-8">
-        <div className="container mx-auto px-4 text-center text-gray-600">
-          <p className="mb-2">© 2025 14º Encontro com a Educação Mealhada</p>
-          <p>A presentation website created for educational purposes.</p>
-        </div>
-      </footer>
     </div>
   );
 }
