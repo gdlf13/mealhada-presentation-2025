@@ -45,7 +45,8 @@ export default function Home() {
       {/* TutorPro-inspired Header */}
       <header className="tutorpro-navbar sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="tutorpro-logo text-base md:text-lg font-semibold whitespace-nowrap">
+          {/* Allow text wrapping on small screens, prevent on md and up */}
+          <Link href="/" className="tutorpro-logo text-base md:text-lg font-semibold md:whitespace-nowrap">
             14.º Encontro com a Educação “Inteligência Artificial: a nova era da Educação”
           </Link>
           <nav>
