@@ -92,7 +92,7 @@ export default function Home() {
                     “Inteligência Artificial: a nova era da Educação”
                   </h1>
                   <p className="text-xl text-white opacity-90 mb-8">Abril 2025</p>
-                  <p className="text-white opacity-80 mb-10 text-lg leading-relaxed">Explore a apresentação "O Elefante na Sala: A Revolução da IA na Educação e os Desafios que Não Podemos Ignorar - Miguel Oliveira" e o Aurélio, o assistente virtual criado para navegar esta experiência.</p>
+                  <p className="text-white opacity-80 mb-10 text-lg leading-relaxed">Explore a apresentação &quot;O Elefante na Sala: A Revolução da IA na Educação e os Desafios que Não Podemos Ignorar - Miguel Oliveira&quot; e o Aurélio, o assistente virtual criado para navegar esta experiência.</p>
                   <div className="flex flex-wrap gap-4">
                     <button 
                       onClick={() => setActivePDFView(true)}
@@ -104,10 +104,11 @@ export default function Home() {
                 </div>
                 <div className="md:w-1/2 flex justify-center">
                   {/* Simplified card styling for debugging */}
-                  <div className="tutorpro-card bg-white rounded-2xl p-6 shadow-xl">
+                  <div className="tutorpro-card bg-white rounded-2xl p-6 shadow-xl relative">
                     <div className="relative overflow-hidden rounded-lg">
                       {/* Final attempt with simplified styling and standard img tag */}
                       <div className="aspect-[3/4] bg-blue-100 flex items-center justify-center overflow-hidden">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img 
                           src="/images/aurelio-image.jpg" 
                           alt="Aurélio, o assistente virtual" 
