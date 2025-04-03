@@ -20,7 +20,9 @@ const PDFViewer = dynamic(() => import("../components/PDFViewer"), {
 
 export default function Home() {
   const [activePDFView, setActivePDFView] = useState(false);
+  const [activeDocument, setActiveDocument] = useState<string>("/pdf/presentation.pdf");
   const pdfPath = "/pdf/presentation.pdf";
+  const articlePath = "/pdf/Artigo O Elefante na Sala.pdf";
   
   // Log when component mounts to ensure it's working
   useEffect(() => {
@@ -72,7 +74,7 @@ export default function Home() {
       {activePDFView ? (
         /* PDF Viewer when active */
         <div className="w-full relative tutorpro-pdf-viewer">
-          <PDFViewer pdfPath={pdfPath} />
+          <PDFViewer pdfPath={activeDocument} />
           <button 
             onClick={() => setActivePDFView(false)}
             className="absolute top-4 right-4 z-10 tutorpro-button-secondary"
@@ -96,7 +98,10 @@ export default function Home() {
                   <p className="text-white opacity-80 mb-10 text-lg leading-relaxed">Explore a apresentação &quot;O Elefante na Sala: A Revolução da IA na Educação e os Desafios que Não Podemos Ignorar - Miguel Oliveira&quot; e o Aurélio, o assistente virtual criado para navegar esta experiência.</p>
                   <div className="flex flex-wrap gap-4">
                     <button 
-                      onClick={() => setActivePDFView(true)}
+                      onClick={() => {
+                        setActiveDocument(pdfPath);
+                        setActivePDFView(true);
+                      }}
                       className="tutorpro-button-secondary text-lg py-4 px-8"
                     >
                       Ver Apresentação
@@ -157,6 +162,31 @@ export default function Home() {
                     <p>
                       A iniciativa visa proporcionar um espaço de reflexão crítica e partilha de boas práticas, incentivando uma integração ética, consciente e pedagógica das ferramentas digitais no contexto educativo. Ao longo do dia, serão apresentadas comunicações, debates e oficinas práticas que abordam desafios, oportunidades e visões para o futuro da educação na era digital.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Resources Section */}
+            <section className="py-12 bg-gray-50 rounded-lg mb-16">
+              <div className="container mx-auto px-6">
+                <h2 className="tutorpro-section-title text-center mb-8">Recursos</h2>
+                <div className="max-w-4xl mx-auto">
+                  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 className="text-xl font-semibold mb-4">Artigo: O Elefante na Sala</h3>
+                    <p className="text-gray-600 mb-4">Explore o artigo completo sobre a revolução da IA na educação e os desafios que precisamos enfrentar.</p>
+                    <button
+                      onClick={() => {
+                        setActiveDocument(articlePath);
+                        setActivePDFView(true);
+                      }}
+                      className="tutorpro-button-secondary inline-flex items-center gap-2"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                      </svg>
+                      Ver Artigo
+                    </button>
                   </div>
                 </div>
               </div>

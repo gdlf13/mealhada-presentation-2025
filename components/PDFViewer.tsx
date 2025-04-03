@@ -65,23 +65,24 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ pdfPath }) => {
           </div>
         </div>
       ) : (
-        <object
-          data={pdfUrl}
-          type="application/pdf"
-          className="w-full h-full"
+        <iframe
+          src={pdfUrl}
+          title="PDF Viewer"
+          className="w-full h-full border-none"
           onLoad={() => setIsLoading(false)}
         >
+          {/* Fallback for browsers that don't support iframe or PDF viewing */}
           <div className="flex items-center justify-center h-full flex-col p-6 bg-white rounded-lg shadow-sm">
-            <p className="text-lg mb-4">Unable to display PDF directly in the browser.</p>
+            <p className="text-lg mb-4">Your browser does not support displaying PDFs directly. Please download it.</p>
             <a 
               href={pdfPath} 
               download
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors"
             >
-              Download PDF Instead
+              Download PDF
             </a>
           </div>
-        </object>
+        </iframe>
       )}
     </div>
   );
